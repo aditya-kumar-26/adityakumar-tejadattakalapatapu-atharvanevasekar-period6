@@ -103,12 +103,11 @@
 
         <table style="height:50vh;width:97vw; position: relative; top: 0; bottom: 0; left: 0; right: 0;border:6px double black; border-radius: 10px">
             <tr style="font-size: 25px; text-align: left; outline: 3px groove; font-family: Trebuchet MS">
-                <th>Player Name</th>
-                <th>Team</th>
-                <th>Pos</th>
-                <th>PPG</th>
-                <th>2P%</th>
-                <th>3P%</th>
+                <th>name</th>
+                <th>year</th>
+                <th>Chart Position</th>
+                <th>Sales</th>
+                <th>Certifications</th>
 
             </tr>
             <?php 
@@ -116,6 +115,11 @@
                     while($row = $result->fetch_assoc()) { ?>
                     <tr class="data" style="outline: 1px dashed gray; font-family: Trebuchet MS">
                         <td><?php echo $row['name'];?></td>
+                        <td><?php echo $row['year'];?></td>
+                        <td><?php echo $row['US'];?></td>
+                        <td><?php echo $row['Sales'];?></td>
+                        <td><?php echo $row['Certifications'];?></td>
+
                     </tr>
                  <?php   }
                 } ?>
