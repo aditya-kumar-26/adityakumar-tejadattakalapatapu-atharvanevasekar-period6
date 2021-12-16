@@ -73,7 +73,8 @@
             position: sticky;
             text-align: center;
         }
-        .rutitle{
+        
+        .rutitle {
             font-family: fantasy, copperplate;
             font-weight: lighter;
         }
@@ -83,22 +84,22 @@
 </head>
 
 <body>
-   
+
 
     <br />
     <button onclick="goBack()" class="arrow">Go Back</button>
 
-        <div class="topnav">
-            <br />
-            <a href="#title" class="top">Figures of Inspiration</a>
-            <br />
-            <br />
-            <a href="index.html" class="active">Home</a>
-            <a href="kendrick.html" class="kenny">Kendrick</a>
-            <a href="kanye.html" class="yeezy">Kanye</a>
-            <a href="ruhan.html" class="glow">Ruhan</a>
-            <a href="albumsales.html" class="database">Album Sales</a>
-        </div>
+    <div class="topnav">
+        <br />
+        <a href="#title" class="top">Figures of Inspiration</a>
+        <br />
+        <br />
+        <a href="index.html" class="active">Home</a>
+        <a href="kendrick.html" class="kenny">Kendrick</a>
+        <a href="kanye.html" class="yeezy">Kanye</a>
+        <a href="ruhan.html" class="glow">Ruhan</a>
+        <a href="albumsales.html" class="database">Album Sales</a>
+    </div>
     </div>
     <br />
     <br />
@@ -121,8 +122,8 @@
         <div class="column">
 
             <p class="album1">
-                After the glow up, Ruhan’s confidence also increased. He never stopped his twirling technique and he started to work out. In no time, he got a six pack. He was truly enjoying life. With patience and hardwork, you can one
-                day glow up and become attractive too.
+                After the glow up, Ruhan’s confidence also increased. He never stopped his twirling technique and he started to work out. In no time, he got a six pack. He was truly enjoying life. With patience and hardwork, you can one day glow up and become attractive
+                too.
 
             </p>
         </div>
@@ -174,6 +175,61 @@
     <h2 class="mainpoint">
         So now that you know the triumphant tale of Ruhan Swar, what are <u>you</u> going to do?
     </h2>
+    <br>
+    <br>
+    <h1 style="text-align: center;"><b> Now, draw the Ruhan that inspires you!</b></h1>
+    <style>
+        #container {
+            position: relative;
+            width: 600px;
+            height: 600px;
+            border-style: solid;
+        }
+        
+        #imageView {
+            background-image: url("../images/ruhanfixed.png");
+            background-size: 600px;
+            background-repeat: no-repeat;
+        }
+        
+        #imageTemp {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+    <div class="row">
+        <div class="column">
+            <h1><label>Drawing tool: <select id="dtool">
+            <option value="line">Line</option>
+            <option value="rect">Rectangle</option>
+            <option value="pencil">Pencil</option>
+        </select></label></h1>
+            <h1><label>Color: <select id="dcolor">
+          <option value="black">Black</option>
+          <option value="red" style="color:red">Red</option>
+          <option value="blue" style="color:blue">Blue</option>
+          <option value="green" style="color:green">Green</option>
+          <option value="yellow" style="color:rgb(177, 177, 2)">Yellow</option>
+      </select></label></h1>
+        </div>
+        <div class="column">
+            <div id="container">
+                <canvas id="imageView" width="600" height="600">
+              
+            </canvas>
+            </div>
+            <script src="../scripts/drawing.js"></script>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
 </body>
 
 </html>
