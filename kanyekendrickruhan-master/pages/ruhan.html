@@ -197,15 +197,42 @@
             top: 0px;
             left: 0px;
         }
+        #dtool {
+            border-radius: 25px;
+            color: #f2f2f2;
+            background-color: #000000;
+            font-size: 20px;
+            padding: 10px 30px;
+        }
+        #dcolor {
+            border-radius: 25px;
+            color: #f2f2f2;
+            background-color: #000000;
+            background-image: linear-gradient(319deg, red,orange,yellow,green,blue,indigo,violet);;
+            font-size: 20px;
+            padding: 10px 30px;
+        }
+      #dlabel  {
+        border-radius: 25px;
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 14px 50px;
+        }
+        #clabel {
+            border-radius: 25px;
+            color: #f2f2f2;
+            font-size: 20px;
+            padding: 14px 50px;
+        }
     </style>
     <div class="row">
         <div class="column">
-            <h1><label>Drawing tool: <select id="dtool">
+            <h1><label id="dlabel"><select id="dtool">
             <option value="line">Line</option>
             <option value="rect">Rectangle</option>
             <option value="pencil">Pencil</option>
         </select></label></h1>
-            <h1><label>Color: <select id="dcolor">
+            <h1><label id="clabel"><select id="dcolor">
           <option value="black">Black</option>
           <option value="red" style="color:red">Red</option>
           <option value="blue" style="color:blue">Blue</option>
