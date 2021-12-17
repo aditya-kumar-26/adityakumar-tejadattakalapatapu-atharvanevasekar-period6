@@ -53,6 +53,22 @@
             font-family: fantasy, copperplate;
             font-weight: lighter;
         }
+            .search {
+    position: relative;
+    float: center;
+    display: block;
+    width: wrap;
+    height: 50px;
+    border-radius: 25px;
+    background: rgb(127, 0, 201);
+    font-family: fantasy, copperplate;
+    color: white;
+    font-size: 25px;
+    line-height: auto;
+    text-align: center;
+}
+        }
+
     </style>
     <script src="../scripts/homepage.js"></script>
     <link rel="stylesheet" href="../styles/home.css" />
@@ -72,8 +88,23 @@
             <a href="kendrick.html" class="kenny">Kendrick</a>
             <a href="kanye.html" class="yeezy">Kanye</a>
             <a href="ruhan.html" class="glow">Ruhan</a>
-            <a href="albumsales.html" class="database">Album Sales</a>
-        </div>
+            <a href="albumsales.php" class="database">Album Sales</a>
+            <br>
+            <br>
+            <form action="search.php" method="GET">
+        <input name="query" id="search" type="text" placeholder="Search database..." style="float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;">
+        <input id="Search" type="submit" value="Search" style="float: right;
+        padding: 6px;
+        border: none;
+        margin-top: 8px;
+        margin-right: 16px;
+        font-size: 17px;">
+      </form>        </div>
     </div>
     <br />
     <br />
