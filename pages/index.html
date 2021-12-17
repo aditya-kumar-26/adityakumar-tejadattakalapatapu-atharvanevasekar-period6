@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <link rel="icon" 
-      type="image/png" 
-      href="../images/mickey.png"/>
+
+<head>
+    <link rel="icon" type="image/png" href="../images/mickey.png" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,81 +10,85 @@
     <source />
 
     <style>
+        body {
+            background-color: #76CC76
+        }
+        
+        .column {
+            float: left;
+            width: 32.33%;
+            padding: 4px;
+            text-align: center;
+        }
+        
+        img {
+            border-radius: 100px;
+        }
+        
+        .name {
+            font-family: fantasy, copperplate;
+            color: #f2f2f2;
+            font-size: 50px;
+        }
+        /* Clear floats after image containers */
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+    <script src="../scripts/homepage.js"></script>
+    <link rel="stylesheet" href="../styles/home.css" />
+</head>
 
-      body{
-        background-color :#76CC76
-      }
-      .column {
-  float: left;
-  width: 32.33%;
-  padding: 4px;
-  text-align: center;
-}
-img{
+<body>
 
-border-radius: 100px;
-}
-.name{
-  font-family: fantasy, copperplate;
-  color: #f2f2f2;
-  font-size: 50px ;
-}
-/* Clear floats after image containers */
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-          </style>
-        <script src="../scripts/homepage.js"></script>
-        <link rel="stylesheet" href="../styles/home.css" />
-  </head>
-  <body>
 
-    
 
     <br />
-      <button onclick="goBack()" class="arrow">Go Back</button>
-  <div class="topalign">
-    <div class="topnav">
-      <a href="#title" class="top">Figures of Inspiration</a>
-      <br />
-      <br />
-      <a href="index.html" class="active">Home</a>
-      <a href="kendrick.html" class="kenny">Kendrick</a>
-      <a href="kanye.html" class="yeezy">Kanye</a>
-      <a href="ruhan.html" class="glow">Ruhan</a>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <div class="row">
-      <div class="column">
-        <img src="../images/kanyefixed.png">
+    <button onclick="goBack()" class="arrow">Go Back</button>
+    <div class="topalign">
+        <div class="topnav">
+            <a href="#title" class="top">Figures of Inspiration</a>
+            <br />
+            <br />
+            <a href="index.html" class="active">Home</a>
+            <a href="kendrick.html" class="kenny">Kendrick</a>
+            <a href="kanye.html" class="yeezy">Kanye</a>
+            <a href="ruhan.html" class="glow">Ruhan</a>
+        </div>
         <br>
-        <a class="name">Kanye West</a>
-      </div>
-      <div class="column">
-        <img src="../images/kendrick fixed.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
 
-        <a class="name">Kendrick Lamar</a>
+        <div class="row">
+            <div class="column">
+                <img src="../images/kanyefixed.png">
+                <br>
+                <a class="name">Kanye West</a>
+            </div>
+            <div class="column">
+                <img src="../images/kendrick fixed.png">
+                <br>
 
-      </div>
-      <div class="column">
-        <img src="../images/ruhanfixed.png">
-        <br>
-        <a class="name">Ruhan Swar</a>
+                <a class="name">Kendrick Lamar</a>
 
-      </div>
-    </div>
+            </div>
+            <div class="column">
+                <img src="../images/ruhanfixed.png">
+                <br>
+                <a class="name">Ruhan Swar</a>
 
-  </body>
+            </div>
+        </div>
+
+</body>
+
 </html>
