@@ -53,7 +53,7 @@
             font-family: fantasy, copperplate;
             font-weight: lighter;
         }
-            .search {
+         .search {
     position: relative;
     float: center;
     display: block;
@@ -65,14 +65,11 @@
     color: white;
     font-size: 25px;
     line-height: auto;
-    text-align: center;
-}
-        }
-
+    text-align: center          }
     </style>
     <script src="../scripts/homepage.js"></script>
     <link rel="stylesheet" href="../styles/home.css" />
-</head>
+</head>`
 
 <body>
     <br />

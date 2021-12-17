@@ -26,9 +26,10 @@
     // output data of each row
     while($row = $result->fetch_assoc()) { ?>
         
-        <p style="font-family: Trebuchet MS; position: relative; top: 50px; left: 100px"> <?php echo $row["name"]. " $row['Sales'] . "<br>"; ?> </p>
+        <p style="font-family: Trebuchet MS; position: relative; top: 50px; left: 100px"> <?php echo $row["name"]. "<br>". "Sales: ".$row['Sales'] . "<br>". "Certifications: ".$row['Certifications'] . "<br>"; ?> </p>
         
     <?php }
+    
     } else {
     echo "0 results";
     }
