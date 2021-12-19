@@ -88,7 +88,7 @@
 
     <h1 class="albtitle" style="text-align: center">Album Sales Database</h1>
     <form action="search.php" method="GET">.
-        <input name="query" id="search" type="text" placeholder="Search Albums.." style="
+        <input name="query" id="search" type="text" placeholder="Search Album Names.." style="
         float: left;
         display: block;
     width: 150px;
